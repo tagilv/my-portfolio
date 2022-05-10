@@ -1,6 +1,6 @@
 import React from 'react'
-import "./about.css"
-import skutan from "../../img/skutan.png"
+import "./about.css";
+import skutan from "../../img/skutan.png";
 
 const About = () => {
   return (

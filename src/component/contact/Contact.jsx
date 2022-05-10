@@ -1,5 +1,7 @@
 import React from 'react'
 import "./contact.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faContactCard } from '@fortawesome/free-solid-svg-icons';
 
 function Contact() {
   return (
@@ -8,6 +10,7 @@ function Contact() {
       <div className="contact-wrapper">
           <div className="contact-left"></div>
             <h1 className="contact-title">Contact me here or send an email to viktor.tagil@gmail.com</h1>
+            <FontAwesomeIcon icon={faContactCard}></FontAwesomeIcon>
             <div className="contact-info">
                 <div className="contact-info-item">
                   <img
