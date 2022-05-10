@@ -1,6 +1,8 @@
 import Intro from "./component/intro/Intro";
 import About from "./component/about/About";
 import ProductList from "./component/productList/ProductList"
+import Contact from "./component/contact/Contact"
+
 
 const App = () => {
   return (
@@ -8,6 +10,7 @@ const App = () => {
       <Intro/>
       <About />
       <ProductList />
+      <Contact />
     </div>
     )
 };
