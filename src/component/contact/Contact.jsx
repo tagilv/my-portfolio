@@ -1,17 +1,33 @@
 import React from 'react'
 import "./contact.css"
 import email from "../../img/email.svg"
-import { useRef } from "react"
+import { useRef, useState} from "react"
+import emailjs from '@emailjs/browser';
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faContactCard } from '@fortawesome/free-solid-svg-icons';
 // <FontAwesomeIcon icon={faContactCard}></FontAwesomeIcon>
 
 function Contact() {
-  const formRef = useRef()
+  const formRef = useRef();
+  const [done, setDone] = useState(false);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        'service_y9rl4od',
+        'template_l27maf9',
+        formRef.current,
+        'fFpYdFaUonutCpLqj'
+      )
+      .then((result) => {
+        console.log(result.text);
+        setDone(true)
+      },
+      (error) => {
+        console.log(error.text);
+      });
   }
 
   return (
@@ -39,6 +55,7 @@ function Contact() {
               <input type="text" placeholder="Email" name="user_email"></input>
               <textarea rows="5" placeholder="Message" name="message"/>
               <button>Submit</button>
+              {done && "Thank you for your message"}
             </form>
           </div>
       </div>
