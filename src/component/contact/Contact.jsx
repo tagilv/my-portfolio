@@ -1,12 +1,19 @@
 import React from 'react'
 import "./contact.css"
 import email from "../../img/email.svg"
+import { useRef } from "react"
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faContactCard } from '@fortawesome/free-solid-svg-icons';
 // <FontAwesomeIcon icon={faContactCard}></FontAwesomeIcon>
 
 function Contact() {
+  const formRef = useRef()
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
+
   return (
     <div className="contact">
       <div className="contact-bg"></div>
@@ -24,9 +31,9 @@ function Contact() {
             </div>
           </div>
           <div className="contact-right">
-            <p className="contact-description">Message me below
+            <p className="contact-description">Message me belowMessage me belowMessage me belowMessage me belowMessage me belowMessage me belowMessage me below
             </p>
-            <form>
+            <form ref={formRef} onSubmit={handleSubmit}>
               <input type="text" placeholder="Name" name="user_name"></input>
               <input type="text" placeholder="Subject" name="user_subject"></input>
               <input type="text" placeholder="Email" name="user_email"></input>
