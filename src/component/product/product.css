@@ -32,3 +32,11 @@
 .product:hover .product-image {
   transform: translateY(-50%);
 }
+
+@media screen and (max-width: 480px) {
+
+  .product {
+    width: 40%;
+    height: 20vh;
+  }
+}
