@@ -10,15 +10,15 @@ const Intro = () => {
           <h2 className="intro-intro">Hello, my name is</h2>
           <h1 className="intro-name"> Viktor Tägil </h1>
           <div className="intro-title">
-            <div className="intro-title-wrapper">
+            {/* <div className="intro-title-wrapper">
               <div className="intro-title-item">Web Developer</div>
               <div className="intro-title-item">Paid Social Expert</div>
               <div className="intro-title-item">Traveller</div>
               <div className="intro-title-item">Language Lover</div>
-            </div>
+            </div> */}
           </div>
           <p className="intro-description">
-            I am building websites for myself and smaller businesses.
+            I am a Web Devloper based in Berlin. My main languages are Ruby on Rails, JS and React and I build webistes for smaller buisness and organisations.
           </p>
         </div>
       </div>

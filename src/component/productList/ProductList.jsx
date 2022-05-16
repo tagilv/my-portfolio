@@ -7,9 +7,9 @@ function ProductList() {
   return (
     <div className="productList">
       <div className="productList-texts">
-        <h1 className="productList-title">See some of my work</h1>
+        <h1 className="productList-title">See some of my work below:</h1>
         <p className="productList-description">
-          Put description here
+         {/* Add Comment */}
         </p>
       </div>
       <div className="productList-list">

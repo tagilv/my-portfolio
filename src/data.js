@@ -2,7 +2,7 @@ export const products = [
   {
     id: 1,
     img: "https://europe1.discourse-cdn.com/figma/optimized/3X/2/b/2b6ac8518d2661c4571758428921dd7aa04f26c8_2_460x1000.jpeg",
-    link: "https://github.com/tagilv",
+    link: "https://super-sponty.herokuapp.com/",
   },
   {
     id: 2,
