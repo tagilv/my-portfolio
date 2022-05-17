@@ -1,3 +1,8 @@
+.ProductList-container {
+  height: 100vh;
+  position: relative;
+}
+
 .productList {
   padding: 50px 100px;
   display: flex;
@@ -39,6 +44,11 @@
 
   .productList-description {
     display: none;
+  }
+
+  .productList-title {
+    font-size: 30px;
+    font-weight: 600;
   }
 
 }

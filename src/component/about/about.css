@@ -39,6 +39,44 @@
   object-fit: cover;
 }
 
+.about-title {
+  font-weight: 300;
+}
+
+.about-sub {
+  margin: 20px 0;
+}
+
+.about-description {
+  font-weight: 300;
+}
+
+.about-social-container {
+  padding: 25px 0;
+}
+
+a.about-social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.about-social:hover {
+  transform: translateY(-2px);
+}
+
+a.github {
+  color: #6e5494;
+}
+
+a.linkedin {
+  color: #006192;
+}
+
+a.instagram {
+  color: #C13584;
+}
+
 @media screen and (max-width: 480px) {
   .about {
     flex-direction: column;

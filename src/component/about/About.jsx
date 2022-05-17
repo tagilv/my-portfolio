@@ -1,6 +1,13 @@
 import React from 'react'
 import "./about.css";
 import skutan from "../../img/skutan.png";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {
+  faGithub,
+  faLinkedin,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons"
+
 
 const About = () => {
   return (
@@ -16,13 +23,26 @@ const About = () => {
         </div>
       </div>
       <div className="about-right">
-        <h1 className="about-title">About Me</h1>
+        <h1 className="about-title">About Me - From Customer Success to Coding</h1>
         <p className="about-sub">
-          Add something here that is rather long but not too long here to make this look good
         </p>
         <p className="about-description">
-          This is where a longer desciption goes This is where a longer desciption goes This is where a longer desciption goes This is where a longer desciption goes This is where a longer desciption goes This is where a longer desciption goes This is where a longer desciption goes This is where a longer desciption goes This is where a longer desciption goes
+          After a couple of years at on the business/Cusotmer Success side at two Saas companies in San Francisco I decided it was time to jump to the prodcut side and I started learning programing on the side. 4 months ago I took the leap and enrolled in a bootcamp and I have never regretted it. I now spend my time learning and building.
         </p>
+        <div className="about-social-container">
+          <a href="https://github.com/tagilv" className="about-social github"
+          >
+          <FontAwesomeIcon icon={faGithub} size="2x" />
+          </a>
+          <a href="https://www.linkedin.com/in/viktortagil/" className="about-social linkedin"
+          >
+          <FontAwesomeIcon icon={faLinkedin} size="2x" />
+          </a>
+          <a href="https://www.instagram.com/viktortagil/" className="about-social instagram"
+          >
+          <FontAwesomeIcon icon={faInstagram} size="2x" />
+          </a>
+        </div>
       </div>
     </div>
   )

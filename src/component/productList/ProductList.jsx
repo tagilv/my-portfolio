@@ -5,17 +5,19 @@ import { products } from "../../data";
 
 function ProductList() {
   return (
-    <div className="productList">
-      <div className="productList-texts">
-        <h1 className="productList-title">See some of my work below:</h1>
-        <p className="productList-description">
-         {/* Add Comment */}
-        </p>
-      </div>
-      <div className="productList-list">
-        {products.map((item) => (
-          <Product key={item.id} img={item.img} link={item.link}/>
-        ))}
+    <div className="ProductList-container">
+      <div className="productList">
+        <div className="productList-texts">
+          <h1 className="productList-title">See some of my work below</h1>
+          <p className="productList-description">
+          {/* Add Comment */}
+          </p>
+        </div>
+        <div className="productList-list">
+          {products.map((item) => (
+            <Product key={item.id} img={item.img} link={item.link}/>
+          ))}
+        </div>
       </div>
     </div>
   )
