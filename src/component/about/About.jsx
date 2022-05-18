@@ -48,4 +48,6 @@ const About = () => {
   )
 }
 
+// note added
+
 export default About
