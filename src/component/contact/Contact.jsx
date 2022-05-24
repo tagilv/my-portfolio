@@ -3,6 +3,9 @@ import "./contact.css"
 import { useRef, useState, useContext } from "react"
 import emailjs from '@emailjs/browser';
 import { ThemeContext } from "../../context"
+import Phone from "../../img/phone.svg"
+import Inbox from "../../img/inbox.svg"
+import Globe from "../../img/globe.svg"
 
 function Contact() {
   const formRef = useRef();
@@ -33,12 +36,36 @@ function Contact() {
       <div className="contact-bg"></div>
       <div className="contact-wrapper">
           <div className="contact-left">
-            <h1 className="contact-title">Contact</h1>
+            <h1 className="contact-title">Contact me to discuss any project on:</h1>
             <div className="contact-info">
+              <div className="contact-info-item">
+                <img
+                  src={Phone}
+                  alt=""
+                  className="contact-icon"
+                  />
+                  +1 415 632 6392
+              </div>
+              <div className="contact-info-item">
+                <img
+                  src={Inbox}
+                  alt=""
+                  className="contact-icon"
+                  />
+                  viktor.tagil@gmail.com
+              </div>
+              <div className="contact-info-item">
+                <img
+                  src={Globe}
+                  alt=""
+                  className="contact-icon"
+                  />
+                  Berlin, Germany
+              </div>
             </div>
           </div>
           <div className="contact-right">
-            <p className="contact-description"> Contact me thru the form below or on viktor.tagil@gmail.com
+            <p className="contact-description"> ..Or submit the form below:
             </p>
             <form ref={formRef} onSubmit={handleSubmit}>
               <input style={{backgroundColor: darkMode && "rgb(51,51,51)"}}type="text" placeholder="Name" name="user_name"></input>

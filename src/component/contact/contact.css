@@ -24,19 +24,30 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
 .contact-title {
-  font-size: 40px;
-  width: 50%;
+  font-size: 30px;
+  width: 80%;
+  font-weight: 300;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+  font-weight: 300;
 }
 
 .contact-icon {
   width: 30px;
   height: 30px;
   margin-right: 20px;
+}
+
+.contact-description {
+  font-weight: 200;
 }
 
 form {
@@ -65,6 +76,7 @@ button {
   padding: 10px;
   background-color: aqua;
   color: white;
+  font-weight: 500;
   border-radius: 10%;
   cursor: pointer;
 }
@@ -83,7 +95,8 @@ button {
 
   .contact-title {
     font-size: 30px;
-    width: 50%;
+    width: 100%;
     padding: 20px 0;
+    font-weight: 300;
   }
 }
