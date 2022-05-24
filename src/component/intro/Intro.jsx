@@ -18,7 +18,7 @@ const Intro = () => {
             </div> */}
           </div>
           <p className="intro-description">
-            I am a Web developer based in Berlin and my main languages are Ruby on Rails, JS and React. I build websites for myself and for smaller businesses.
+            I am a Web developer based in Berlin and my main languages are Ruby on Rails, JS and React. I build websites for myself and for smaller businesses. This page was built with React.
           </p>
         </div>
       </div>
