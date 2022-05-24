@@ -4,10 +4,6 @@ import { useRef, useState, useContext } from "react"
 import emailjs from '@emailjs/browser';
 import { ThemeContext } from "../../context"
 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faContactCard } from '@fortawesome/free-solid-svg-icons';
-// <FontAwesomeIcon icon={faContactCard}></FontAwesomeIcon>
-
 function Contact() {
   const formRef = useRef();
   const [done, setDone] = useState(false);

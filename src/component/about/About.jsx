@@ -27,7 +27,10 @@ const About = () => {
         <p className="about-sub">
         </p>
         <p className="about-description">
-          After a couple of years at on the business/Cusotmer Success side at two Saas companies in San Francisco I decided it was time to jump to the prodcut side and I started learning programing on the side. 4 months ago I took the leap and enrolled in a bootcamp and I have never regretted it. I now spend my time learning and building.
+          After a couple of years at on the business/Customer Success side at two Saas companies in San Francisco I decided it was time to jump to the product side and I started learning programing on the side. 4 months ago I took the leap and enrolled in a bootcamp and I have never regretted it. I now spend my time learning and building web apps.
+        </p>
+        <p className="about-description-platforms">
+         Find me on the platforms below
         </p>
         <div className="about-social-container">
           <a href="https://github.com/tagilv" className="about-social github"
