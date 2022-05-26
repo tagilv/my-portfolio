@@ -54,4 +54,8 @@
     font-weight: 300;
   }
 
+  .ProductList-container {
+    height: auto;
+  }
+
 }

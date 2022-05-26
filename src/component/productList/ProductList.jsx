@@ -15,7 +15,7 @@ function ProductList() {
         </div>
         <div className="productList-list">
           {products.map((item) => (
-            <Product key={item.id} img={item.img} link={item.link} text={item.text} />
+            <Product key={item.id} img={item.img} link={item.link} name={item.name} />
           ))}
         </div>
       </div>

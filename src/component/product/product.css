@@ -5,6 +5,7 @@
   border: 2px solid gainsboro;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
+  position: relative;
 }
 
 .product-browser {
@@ -14,6 +15,11 @@
   align-items: center;
   position: sticky;
   z-index: 2;
+}
+
+.product-circle-wrapper {
+  position: absolute;
+  display: flex;
 }
 
 .product-circle {
@@ -37,12 +43,15 @@
   font-size: 15px;
   font-weight: 300;
   margin: 2px 0;
+  text-align: center;
+  width: 100%;
 }
 
 @media screen and (max-width: 480px) {
 
   .product {
-    width: 40%;
-    height: 20vh;
+    width: 100%;
+    margin: 20px 10px;
+
   }
 }
